@@ -14,7 +14,7 @@ const Filter: FC<FilterProps> = ({
 }) => {
   return (
     <div className="flex flex-col justify-end items-end p-4 pt-0 rounded-md">
-      <h3 className="sm:mr-4 mb-2 sm:mb-0 pt-6 w-full font-medium max-sm:text-center text-end">
+      <h3 className="sm:mr-4 mb-2 sm:mb-0 pt-3 lg:pb-2 w-full font-medium max-sm:text-center text-end">
         Ordenar por:
       </h3>
       <div className="flex max-sm:flex-col flex-wrap justify-end gap-2 w-full sm:w-auto">
