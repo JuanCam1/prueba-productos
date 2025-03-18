@@ -26,7 +26,7 @@ Necesitas:
 - [Git](https://git-scm.com/).
 - [Bun](https://bun.sh/).
 
-1. [Fork](https://github.com/JuanCam1/prueba-productos.git) de este repositorio y clonarlo localmente:
+1. [Fork](https://github.com/JuanCam1/prueba-productos.git) de este repositorio o clonarlo localmente:
 
 ```bash
 git clone https://github.com/JuanCam1/prueba-productos.git
