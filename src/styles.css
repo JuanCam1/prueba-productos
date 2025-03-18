@@ -3,24 +3,23 @@
 @tailwind utilities;
 
 @media (prefers-reduced-motion: reduce) {
-
-  *,
-  *::before,
-  *::after {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
-    transition-duration: 0s;
-    transition: none;
-  }
+	*,
+	*::before,
+	*::after {
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.01ms !important;
+		scroll-behavior: auto !important;
+		transition-duration: 0s;
+		transition: none;
+	}
 }
 
 @media screen and (max-width: 770px) {
-  td::before {
-    content: attr(data-label);
-    font-weight: bold;
-    text-transform: uppercase;
-    float: left;
-  }
+	td::before {
+		content: attr(data-label);
+		font-weight: bold;
+		text-transform: uppercase;
+		float: left;
+	}
 }

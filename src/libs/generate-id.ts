@@ -1,5 +1,3 @@
-
-
 export const generateId = () => {
-  return self.crypto.randomUUID();
-}
+	return self.crypto.randomUUID();
+};
