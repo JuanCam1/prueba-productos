@@ -15,7 +15,7 @@ const TableList: FC<Props> = ({
   onRemoveProduct,
 }) => {
   return (
-    <table className="border max-md:border-0 max-md:last:border-b-0 rounded-md w-full font-Montserrat border-collapse table-fixed">
+    <table className="border max-md:border-0 max-md:last:border-b-0 rounded-md w-full border-collapse table-fixed">
       <thead className="max-md:hidden">
         <tr className="max-md:block max-md:mb-2 max-md:border-b-4">
           <th className="py-3 lg:w-[5%] text-[12px] text-center uppercase">

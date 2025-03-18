@@ -5,7 +5,7 @@ import ProductProvider from "@/context/products-provider";
 export const Route = createRootRoute({
   component: () => (
     <ProductProvider storageKey="products-list">
-      <div className="h-screen">
+      <div className="flex flex-col gap-2 h-screen">
         <Navbar />
         <div className="flex justify-center items-center h-full">
           <Outlet />

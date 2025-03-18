@@ -25,8 +25,8 @@ function ListComponent() {
   } = useListProduct();
 
   return (
-    <div className="relative flex justify-center items-center max-sm:mt-56 w-full h-full">
-      <div className="flex flex-col justify-center w-[1200px]">
+    <div className="relative flex lg:justify-center lg:items-center w-full h-full">
+      <div className="lg:flex lg:flex-col w-[1200px]">
         <Filter
           handleSort={handleSort}
           renderSortIndicator={renderSortIndicator}
@@ -39,14 +39,8 @@ function ListComponent() {
           onRemoveProduct={onRemoveProduct}
         />
       </div>
-      {selectedProduct && isOpen && (
-        <ModalProduct
-          selected={selectedProduct}
-          isOpen={isOpen}
-          onClose={onCloseModal}
-        />
-      )}
-      <div className="right-0 bottom-0 absolute flex flex-col gap-2">
+
+      <div className="max-sm:hidden right-0 bottom-0 absolute flex flex-col gap-2">
         <button
           onClick={initialProducts}
           className="bg-blue-500 px-4 py-2 rounded-md text-white"
@@ -62,6 +56,14 @@ function ListComponent() {
           limpiar
         </button>
       </div>
+
+      {selectedProduct && isOpen && (
+        <ModalProduct
+          selected={selectedProduct}
+          isOpen={isOpen}
+          onClose={onCloseModal}
+        />
+      )}
     </div>
   );
 }
